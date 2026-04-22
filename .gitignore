@@ -1,0 +1,34 @@
+# ── Dependencias PHP ──────────────────────────────────────────
+/vendor/
+/vendor_stub/
+
+# ── Variables de entorno y configuración sensible ─────────────
+.env
+.env.local
+.env.*.local
+
+# ── Logs ──────────────────────────────────────────────────────
+*.log
+/logs/
+
+# ── Sistema operativo ─────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── IDEs y editores ───────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ── Docker volumes (datos locales de PostgreSQL) ──────────────
+postgres_data/
+
+# ── Archivos temporales PHP ───────────────────────────────────
+*.tmp
+/tmp/
+
+# ── Archivos de prueba ────────────────────────────────────────
+test.html
+hola.txt

@@ -1,0 +1,19 @@
+{
+    "name": "specter/sistema",
+    "description": "Sistema Specter — Plataforma de Gestión de Videojuegos",
+    "type": "project",
+    "require": {
+        "php": ">=8.1",
+        "dompdf/dompdf": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Specter\\": "src/"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist"
+    },
+    "minimum-stability": "stable"
+}

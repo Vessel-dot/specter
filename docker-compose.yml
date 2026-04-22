@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  # Servidor Web (PHP + Apache)
+  app:
+    build: .
+    container_name: specter_app
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/var/www/html  # El punto indica "esta carpeta" (C:\specter)
+    depends_on:
+      - db
+    networks:
+      - specter-network
+      
+
+  # Base de Datos (PostgreSQL)
+  db:
+    image: postgres:15
+    container_name: specter_db
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: vessel
+      POSTGRES_DB: specter_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data # <--- Corregí la ruta interna (era /var/lib/...)
+    networks:
+      - specter-network
+
+networks:
+  specter-network:
+    driver: bridge
+
+volumes:
+  postgres_data:
