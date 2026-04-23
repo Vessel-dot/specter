@@ -168,7 +168,7 @@ docker exec -it specter_db psql -U postgres -d specter_db
 | Puerto | `5432` |
 | Base de datos | `specter_db` |
 | Usuario | `postgres` |
-| Contraseña | `vessel` |
+| Contraseña | `tu_conraseña` |
 
 ### Queries útiles
 
