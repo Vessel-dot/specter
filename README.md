@@ -278,7 +278,7 @@ Apache redirige las URLs a la nueva estructura de carpetas de forma transparente
 
 ```yaml
 POSTGRES_USER:     postgres
-POSTGRES_PASSWORD: vessel
+POSTGRES_PASSWORD: tu_contraseña
 POSTGRES_DB:       specter_db
 ```
 
